@@ -1,0 +1,190 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <script
+    src="https://kit.fontawesome.com/0d6fbd4e86.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url(bg.jpg);
+    }
+
+    .contact-us {
+      width: 250px;
+      background: #fff;
+      padding: 50px;
+      margin: 100px auto;
+      border-radius: 30px;
+      position: relative;
+    }
+
+    .title {
+      clear: #535274;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .form,
+    .form-items {
+      width: 100%;
+    }
+
+    .form-items .input {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 15px 40px;
+      box-sizing: border-box;
+      background: #ebeef1;
+      border: 0;
+      outline: none;
+      border-radius: 30px;
+    }
+
+    .form-items .input.message {
+      height: 125px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      padding: 15px;
+      resize: none;
+    }
+
+    .submit-btn {
+      background: #827ffe;
+      text-align: center;
+      color: #fff;
+      padding: 12px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      margin-left: 3px;
+      margin-right: 3px;
+      opacity: 0.9;
+      box-shadow: 1px 1px 15px rgb(150, 151, 151);
+      transition: opacity 0.5s, box-shadow 0.5s, margin-left 0.5s,
+        margin-right 0.5s;
+    }
+
+    .submit-btn .fa-solid {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+
+    .form-items {
+      position: relative;
+    }
+
+    .form-items .fa-solid {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: #9a99aa;
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      width: 200px;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons div {
+      width: 50px;
+      height: 50px;
+      background: rgb(0, 0, 255);
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .social-icons div .fa-brands {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+
+    .social-icons div.facebook {
+      background: #5178d9;
+    }
+    .social-icons div.facebook:hover {
+      opacity: 0.9;
+      box-shadow: 1px 1px 15px rgb(240, 243, 244);
+    }
+    .social-icons div.twitter {
+      background: #41caf6;
+    }
+    .social-icons div.twitter:hover {
+      opacity: 0.9;
+      box-shadow: 1px 1px 15px rgb(240, 243, 244);
+    }
+    .social-icons div.google {
+      background: #fb4f4f;
+    }
+    .social-icons div.google:hover {
+      opacity: 0.9;
+      box-shadow: 1px 1px 15px rgb(240, 243, 244);
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-us">
+    <div class="title">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="form">
+      <div class="form-items">
+        <input type="text" class="input" placeholder="Name" />
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+      <div class="form-items">
+        <input type="email" class="input" placeholder="Email" />
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+      <div class="form-items">
+        <textarea
+          class="input message"
+          cols="30"
+          rows="10"
+          placeholder="Message...."
+        ></textarea>
+      </div>
+
+      <div class="submit-btn">
+        Submit
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+
+      <div class="social-icons">
+        <div class="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <div class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="google">
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
